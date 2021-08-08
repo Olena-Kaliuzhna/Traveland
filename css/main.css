@@ -366,7 +366,8 @@ a {
 .header {
   width: 100%;
   min-height: 900px;
-  background-image: url("../../images/header-bg.jpg");
+  background-color: #484c5f;
+  background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -544,7 +545,7 @@ a {
 
 .country::before {
   content: "";
-  background-image: url("../../images/geo-icon.svg");
+  background-image: url("../images/geo-icon.svg");
   position: absolute;
   top: 5px;
   left: 0;
@@ -559,7 +560,7 @@ a {
 
 .rating::before {
   content: "";
-  background-image: url("../../images/Star-icon.svg");
+  background-image: url("../images/Star-icon.svg");
   position: absolute;
   top: 5px;
   left: 0;
@@ -630,12 +631,12 @@ a {
 
 .swiper-container.mySwiper .swiper-button-next:after {
   right: 350px;
-  background-image: url("../../images/arrow-R.svg");
+  background-image: url("../images/arrow-R.svg");
 }
 
 .swiper-container.mySwiper .swiper-button-prev:after {
   left: 350px;
-  background-image: url("../../images/arrow-L.svg");
+  background-image: url("../images/arrow-L.svg");
 }
 
 .news {
