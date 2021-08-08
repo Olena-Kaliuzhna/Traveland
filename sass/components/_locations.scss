@@ -1,0 +1,48 @@
+.locations {
+  padding: 140px 0;
+}
+.locations-title {
+  @extend %title;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 1.4;
+}
+.locations-text {
+  max-width: 745px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  opacity: 0.6;
+}
+.locations-list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+.location-item {
+  width: 360px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+.location-img {
+  margin: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+.location-wrapper {
+  padding: 35px 27px 33px;
+}
+
+.location-title {
+  @extend %title;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.location-discription {
+  text-align: center;
+  opacity: 0.6;
+}

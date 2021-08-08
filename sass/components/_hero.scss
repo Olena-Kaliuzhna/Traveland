@@ -1,0 +1,24 @@
+.header-hero {
+  max-width: 805px;
+}
+
+.hero-title {
+  @extend %title;
+  text-align: left;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  max-width: 458px;
+  margin-bottom: 40px;
+  opacity: 0.6;
+}
+
+.hero-button {
+  @extend %button;
+  min-width: 187px;
+  padding: 17px 46px;
+}

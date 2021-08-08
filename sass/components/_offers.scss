@@ -1,0 +1,144 @@
+.offers {
+}
+.offers-title {
+  @extend %title;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 1.4;
+}
+.offers-text {
+  max-width: 656px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+  opacity: 0.6;
+}
+.offers-list {
+  @extend %list;
+  display: flex;
+}
+.offer-item {
+  max-width: 262px;
+  margin-right: 25px;
+  &.swiper-slide-active {
+    opacity: 0.5;
+  }
+}
+
+.offer-img {
+  max-width: 262px;
+  margin: 0;
+  border-radius: 10px;
+}
+.offer-wrapper {
+  max-width: 262px;
+  padding-top: 20px;
+}
+.offer-title {
+  @extend %title;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.offer-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+.country {
+  position: relative;
+  padding-left: 34px;
+  &::before {
+    content: "";
+    background-image: url("../../images/geo-icon.svg");
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 11px;
+    height: 15px;
+  }
+}
+.rating {
+  position: relative;
+  padding-left: 34px;
+  &::before {
+    content: "";
+    background-image: url("../../images/Star-icon.svg");
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+  }
+}
+.offer-time {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+.offer-price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+
+  & span {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.6;
+  }
+}
+.swiper-container {
+  &.mySwiper {
+    position: relative;
+    padding-bottom: 62px;
+
+    & .swiper-pagination-bullets {
+      position: absolute;
+      margin-bottom: 0;
+      bottom: 0;
+    }
+    .swiper-pagination-bullet {
+      width: 75px;
+      height: 5px;
+      border-radius: 10px;
+      opacity: 1;
+      background: rgba(201, 69, 59, 0.1);
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #c9453b;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      margin-bottom: 0;
+      top: auto;
+      bottom: 0;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 13px;
+        bottom: 0;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .swiper-button-next:after {
+      right: 350px;
+      background-image: url("../../images/arrow-R.svg");
+    }
+    .swiper-button-prev:after {
+      left: 350px;
+      background-image: url("../../images/arrow-L.svg");
+    }
+  }
+}

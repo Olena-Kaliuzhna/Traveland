@@ -1,0 +1,812 @@
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:wght@500;700&family=Ribeye&family=Roboto:wght@400;500;700&display=swap");
+/*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+Add the correct height in Firefox.
+*/
+hr {
+  height: 0;
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Correct the padding in Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+.nav-list, .locations-list, .offers-list, .news-list, .footer-social-list, .footer-about-list, .footer-other-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-button, .hero-button, .footer-subscribe-button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #c9453b;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hero-title, .locations-title, .location-title, .offers-title, .offer-title, .news-title, .new-title {
+  font-family: "Gelasio", serif;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1140px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.header {
+  width: 100%;
+  min-height: 900px;
+  background-image: url("../../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.header-nav {
+  padding: 35px 0;
+  margin-bottom: 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo {
+  display: block;
+  margin-right: 210px;
+  font-family: "Ribeye", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+
+.nav-list {
+  width: 100%;
+  margin-right: 170px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.nav-button {
+  min-width: 163px;
+  padding: 14px 35px;
+}
+
+.header-hero {
+  max-width: 805px;
+}
+
+.hero-title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  max-width: 458px;
+  margin-bottom: 40px;
+  opacity: 0.6;
+}
+
+.hero-button {
+  min-width: 187px;
+  padding: 17px 46px;
+}
+
+.locations {
+  padding: 140px 0;
+}
+
+.locations-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 1.4;
+}
+
+.locations-text {
+  max-width: 745px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.locations-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-item {
+  width: 360px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.location-img {
+  margin: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.location-wrapper {
+  padding: 35px 27px 33px;
+}
+
+.location-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.location-discription {
+  text-align: center;
+  opacity: 0.6;
+}
+
+.offers-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 1.4;
+}
+
+.offers-text {
+  max-width: 656px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.offers-list {
+  display: flex;
+}
+
+.offer-item {
+  max-width: 262px;
+  margin-right: 25px;
+}
+
+.offer-item.swiper-slide-active {
+  opacity: 0.5;
+}
+
+.offer-img {
+  max-width: 262px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.offer-wrapper {
+  max-width: 262px;
+  padding-top: 20px;
+}
+
+.offer-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.offer-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+.country {
+  position: relative;
+  padding-left: 34px;
+}
+
+.country::before {
+  content: "";
+  background-image: url("../../images/geo-icon.svg");
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 11px;
+  height: 15px;
+}
+
+.rating {
+  position: relative;
+  padding-left: 34px;
+}
+
+.rating::before {
+  content: "";
+  background-image: url("../../images/Star-icon.svg");
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.offer-time {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+.offer-price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.offer-price span {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.swiper-container.mySwiper {
+  position: relative;
+  padding-bottom: 62px;
+}
+
+.swiper-container.mySwiper .swiper-pagination-bullets {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+.swiper-container.mySwiper .swiper-pagination-bullet {
+  width: 75px;
+  height: 5px;
+  border-radius: 10px;
+  opacity: 1;
+  background: rgba(201, 69, 59, 0.1);
+}
+
+.swiper-container.mySwiper .swiper-pagination-bullet-active {
+  background: #c9453b;
+}
+
+.swiper-container.mySwiper .swiper-button-prev,
+.swiper-container.mySwiper .swiper-button-next {
+  position: absolute;
+  margin-bottom: 0;
+  top: auto;
+  bottom: 0;
+}
+
+.swiper-container.mySwiper .swiper-button-prev:after,
+.swiper-container.mySwiper .swiper-button-next:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.swiper-container.mySwiper .swiper-button-next:after {
+  right: 350px;
+  background-image: url("../../images/arrow-R.svg");
+}
+
+.swiper-container.mySwiper .swiper-button-prev:after {
+  left: 350px;
+  background-image: url("../../images/arrow-L.svg");
+}
+
+.news {
+  padding: 140px 0;
+}
+
+.news-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 1.4;
+}
+
+.news-text {
+  max-width: 581px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.news-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-item-big {
+  width: 554px;
+}
+
+.new-img-big {
+  margin-bottom: 35px;
+}
+
+.new-discription-big {
+  opacity: 0.6;
+}
+
+.new-author-big {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-item {
+  margin-bottom: 30px;
+}
+
+.new-link {
+  display: flex;
+  align-items: center;
+}
+
+.new-img {
+  width: 263px;
+  margin-right: 27px;
+}
+
+.new-wrapper {
+  width: 263px;
+}
+
+.new-title {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.new-discription {
+  opacity: 0.6;
+}
+
+.new-author {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.footer {
+  padding: 70px 0 78px 0;
+  background: rgba(38, 148, 153, 0.04);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts .logo {
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+.footer-contacts .contactUs {
+  margin-bottom: 10px;
+}
+
+.footer-contacts .contactUs-link {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-item {
+  margin-right: 27px;
+}
+
+.footer-about-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+
+.footer-about-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-other-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+
+.footer-other-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-subscribe-title {
+  margin-bottom: 42px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+
+.footer-subscribe-inner {
+  display: flex;
+}
+
+.footer-subscribe-input {
+  padding: 10px 20px;
+  margin-right: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  border-radius: 5px;
+  background-color: rgba(38, 148, 153, 0.004);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.015);
+}
+
+.footer-subscribe-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #000;
+}
+
+.footer-subscribe-button {
+  min-width: 103px;
+  padding: 10px 32px;
+}
+/*# sourceMappingURL=main.css.map */

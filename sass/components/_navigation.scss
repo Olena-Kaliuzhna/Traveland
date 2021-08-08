@@ -1,0 +1,37 @@
+.header-nav {
+  padding: 35px 0;
+  margin-bottom: 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo {
+  display: block;
+  margin-right: 210px;
+  font-family: $logo-text-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+
+.nav-list {
+  @extend %list;
+  width: 100%;
+  margin-right: 170px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.nav-item:not(:last-child) {
+  // margin-right: 50px;
+}
+
+.nav-button {
+  @extend %button;
+  min-width: 163px;
+  padding: 14px 35px;
+}
