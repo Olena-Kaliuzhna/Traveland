@@ -16,7 +16,7 @@
       <div class="container">
         <nav class="header-nav">
           <a href="./index.html" class="logo">Trevland</a>
-          <ul class="nav-list">
+          <ul class="nav-list" id="nav-menu" data-menu>
             <li class="nav-item"><a href="#">Home</a></li>
             <li class="nav-item"><a href="#">Location</a></li>
             <li class="nav-item"><a href="#">Blog</a></li>
@@ -24,6 +24,29 @@
             <li class="nav-item"><a href="#">Contact</a></li>
           </ul>
           <button class="nav-button" type="button">Booking now</button>
+
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/sprite-icon.svg#icon-menu"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./images/sprite-icon.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
         </nav>
         <div class="header-hero">
           <h1 class="hero-title">Railtrips To Here, There And Everywhere!</h1>
@@ -97,10 +120,10 @@
         </div>
       </div>
       <div class="offers">
-        <h2 class="offers-title">Popular Location</h2>
+        <h2 class="offers-title">Special Offers</h2>
         <p class="offers-text">
-          For every one of us, travel came first. We’ve spent years living as
-          nomads, pioneers, and voyagers— from island hopping in the
+          With the New Year comes a refreshing sense of wanderlust, a longing in
+          our souls to escape to warmer climates,
         </p>
         <div class="swiper-container mySwiper">
           <ul class="offers-list swiper-wrapper">

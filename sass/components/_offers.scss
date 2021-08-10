@@ -3,26 +3,37 @@
 .offers-title {
   @extend %title;
   margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 43px;
+  font-size: 30px;
   line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    font-size: 43px;
+  }
 }
 .offers-text {
   max-width: 656px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
   opacity: 0.6;
+  @media screen and (min-width: 768px) {
+    max-width: 656px;
+    margin-bottom: 60px;
+  }
 }
 .offers-list {
   @extend %list;
   display: flex;
+  justify-content: space-between;
 }
 .offer-item {
-  max-width: 262px;
-  margin-right: 25px;
-  &.swiper-slide-active {
-    opacity: 0.5;
+  max-width: 100%;
+  padding: 0 20px;
+  // margin-right: 25px;
+  @media screen and (min-width: 480px) {
+    max-width: 262px;
+    &.swiper-slide-active {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -99,7 +110,12 @@
   &.mySwiper {
     position: relative;
     padding-bottom: 62px;
-
+    & .swiper-pagination {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
     & .swiper-pagination-bullets {
       position: absolute;
       margin-bottom: 0;
@@ -129,16 +145,33 @@
         height: 13px;
         bottom: 0;
         background-repeat: no-repeat;
+        @media screen and (min-width: 768px) {
+          display: block;
+        }
       }
     }
 
     .swiper-button-next:after {
-      right: 350px;
+      right: 20px;
       background-image: url("../images/arrow-R.svg");
+
+      @media screen and (min-width: 768px) {
+        right: 150px;
+      }
+      @media screen and (min-width: 1200px) {
+        right: 350px;
+      }
     }
     .swiper-button-prev:after {
-      left: 350px;
+      left: 20px;
       background-image: url("../images/arrow-L.svg");
+
+      @media screen and (min-width: 768px) {
+        left: 150px;
+      }
+      @media screen and (min-width: 1200px) {
+        left: 350px;
+      }
     }
   }
 }

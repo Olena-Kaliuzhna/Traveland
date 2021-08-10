@@ -1,10 +1,14 @@
 .header {
+  position: relative;
   width: 100%;
-  min-height: 900px;
+  min-height: 600px;
   background-color: #484c5f;
   background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: $primary-white-color;
+  @media screen and (min-width: 768px) {
+    min-height: 900px;
+  }
 }

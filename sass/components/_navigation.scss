@@ -1,37 +1,90 @@
 .header-nav {
   padding: 35px 0;
-  margin-bottom: 165px;
+  margin-bottom: 60px;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+
+  // flex-wrap: wrap;
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: start;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    margin-bottom: 165px;
+  }
 }
 
 .logo {
   display: block;
-  margin-right: 210px;
+  margin-right: 50px;
   font-family: $logo-text-family;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: 0.06em;
+  @media screen and (min-width: 468px) {
+    margin-right: 140px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 210px;
+  }
 }
 
 .nav-list {
   @extend %list;
-  width: 100%;
-  margin-right: 170px;
-  display: flex;
-  justify-content: space-between;
   font-weight: 500;
   line-height: 1.5;
-}
-.nav-item:not(:last-child) {
-  // margin-right: 50px;
 }
 
 .nav-button {
   @extend %button;
   min-width: 163px;
+  max-width: 180px;
   padding: 14px 35px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    z-index: 5;
+    transform: translateY(100%);
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    color: $primary-text-color;
+    background: rgba(255, 255, 255, 0.782);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.08),
+      0 4px 8px rgba(0, 0, 0, 0.04);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-open {
+      display: block;
+      transform: translateY(60px);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    color: $primary-white-color;
+    width: 100%;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    margin-right: 170px;
+  }
 }
