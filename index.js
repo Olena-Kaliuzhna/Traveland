@@ -17,8 +17,6 @@ const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 60,
-
-  // loop: true,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",

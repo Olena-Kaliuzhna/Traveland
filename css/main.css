@@ -679,6 +679,10 @@ a {
   opacity: 0.6;
 }
 
+.offers {
+  overflow-x: hidden;
+}
+
 .offers-title {
   margin-bottom: 20px;
   font-size: 30px;
